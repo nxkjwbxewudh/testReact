@@ -60,7 +60,7 @@ $ git push
 
 多人合作开发的情况下，很有可能自己提交的时候远程仓库以及被其他人更新过了，就会出现下图所示的问题：
 
-![](https://raw.githubusercontent.com/nxkjwbxewudh/testReact/master/images/xiong/pushfalse.png)
+![](https://raw.githubusercontent.com/nxkjwbxewudh/testReact/master/images/xiong/pushfalse.PNG)
 
 就需要我们先pull再push
 
@@ -84,7 +84,7 @@ $ git pull
 
 完成之后，查看git log会有一条记录：
 
-![](https://raw.githubusercontent.com/nxkjwbxewudh/testReact/master/images/xiong/mergebranch.png)
+![](https://raw.githubusercontent.com/nxkjwbxewudh/testReact/master/images/xiong/mergebranch.PNG)
 
 意思是git pull把origin pull下来，和自己本地的合并成一个新版本
 
