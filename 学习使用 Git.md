@@ -66,62 +66,6 @@ $ git push
 
 
 
-####  git pull 与 git pull --rebase
-
-```bash
-git pull = git fetch + git merge
-
-git pull --rebase = git fetch + git rebase
-```
-
-
-
-如果我们使用
-
-```bash
-$ git pull
-```
-
-完成之后，查看git log会有一条记录：
-
-![](https://raw.githubusercontent.com/nxkjwbxewudh/testReact/master/images/xiong/mergebranch.PNG)
-
-意思是git pull把origin pull下来，和自己本地的合并成一个新版本
-
-
-
-如果使用
-
-```bash
-$ git pull --rebase
-```
-
-这会生成新版本，同时会废除之前本地提交的版本
-
-**执行完git pull --rebase之后如果有合并冲突，使用以下三种方式处理这些冲突：**
-
-- git rebase --abort 会放弃合并，回到rebase操作之前的状态，之前的提交的不会丢弃；
-
-- git rebase --skip 则会将引起冲突的commits丢弃掉（慎用！！）；
-
-- git rebase --continue 合并冲突，结合"git add 文件"命令一起用与修复冲突，提示开发者，一步一步地有没有解决冲突。（fix conflicts and then run “git rebase --continue”）
-
-  
-
-解决完冲突之后
-
-```bash
-$ git add .
-
-$ git rebase --continue
-
-$ git push
-```
-
-在任何时候，都可以用git rebase --abort参数来终止rebase的行动，并且mywork分支会回到rebase开始前的状态。
-
-
-
 ### 2.2 Github 图片引用问题
 
 github经常无法显示图片，解决办法：
