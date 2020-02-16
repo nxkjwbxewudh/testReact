@@ -2,7 +2,7 @@
 
 
 
-
+## 1 搜索IP
 
 在https://githubusercontent.com.ipaddress.com/网站搜索`avatars0.githubusercontent.com`
 
@@ -18,6 +18,8 @@ https://githubusercontent.com.ipaddress.com/avatars0.githubusercontent.com
 
 
 
+## 2 修改host文件
+
 在C:\Windows\System32\drivers\etc路径下打开hosts文件
 
 我用的notepad++打开的
@@ -31,12 +33,13 @@ https://githubusercontent.com.ipaddress.com/avatars0.githubusercontent.com
 
 
 
-在本地编辑markdown的时候
+## 3 刷新DNS缓存
 
-引用https://raw.githubusercontent.com/[后面是图片路径]的格式
+在cmd里输入**ipconfig /flushdns**并回车
+
+
 
 
 
 成功显示图片
 
-【即使这样，也还是要看运气。。。】

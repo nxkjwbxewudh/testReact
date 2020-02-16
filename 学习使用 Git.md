@@ -66,9 +66,9 @@ $ git push
 
 
 
-### 2.2 Github 图片引用问题
+### 2.2  md 文档引用 Github 图片
 
-github经常无法显示图片，解决办法：
+#### 2.2.1 搜索IP
 
 在https://githubusercontent.com.ipaddress.com/网站搜索`avatars0.githubusercontent.com`
 
@@ -84,6 +84,8 @@ https://githubusercontent.com.ipaddress.com/avatars0.githubusercontent.com
 
 
 
+#### 2.2.2 修改host文件
+
 在C:\Windows\System32\drivers\etc路径下打开hosts文件
 
 我用的notepad++打开的
@@ -98,15 +100,23 @@ https://githubusercontent.com.ipaddress.com/avatars0.githubusercontent.com
 
 
 
+#### 2.2.3 刷新DNS缓存
+
+在cmd里输入**ipconfig /flushdns**并回车
+
+
+
+#### 2.2.4 md文件引用图片
+
 在本地编辑markdown的时候
 
 引用https://raw.githubusercontent.com/[后面是图片路径] 的格式
 
 
 
-成功显示图片
+push之后，可以在网站看到图片
 
-【即使这样，也还是要看运气。。。】
+
 
 
 
